@@ -1,0 +1,39 @@
+$maincolor: #e480e0;
+$maincolorhover: #b967b7;
+$firstcolor: #fff;
+$secondcolor: #333;
+$lightcolor: #ddd; 
+// #8626D9
+// #D92679
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+	font-family: "Montserrat", sans-serif;
+}
+
+
+.h1, h1 {
+    font-size: calc(4rem + 1.5vw);
+}
+
+p {
+	font-size: 1.8rem;
+}
+
+.main-color {
+	color: $maincolor;
+}
+
+.accordion-flex {
+	display: flex;
+	align-items: start;
+	flex-direction: column;
+}

@@ -1,0 +1,27 @@
+@use '../_components' as *;
+
+.welcome-box {
+	background-color: $secondcolor;
+	box-shadow: 10px 10px 10px $secondcolor;
+
+	& .welcome-title {
+		color: $maincolor;
+	}
+
+	& .welcome-text {
+		letter-spacing: .1rem;
+	}
+
+	& .btn {
+		transition: background-color 0.3s;
+		background-color: $maincolor;
+		border: none;
+
+		&:hover {
+			 background-color: $maincolorhover;
+		}
+		&:focus {
+			 background-color: $maincolorhover;
+		}
+	}
+}

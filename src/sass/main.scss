@@ -1,0 +1,138 @@
+@use './_components' as *;
+
+nav {
+	background-color: #ddd;
+	z-index: 1000;
+}
+
+.navbar-brand {
+	font-size: 2rem;
+	background-color: $secondcolor;
+	color: $firstcolor;
+	font-weight: bold;
+}
+
+.nav-link {
+	font-size: 2rem;
+	margin: 0 .5rem;
+	padding: 1rem;
+	transition: background-color .3s, color .3s, font-weight .3s;
+}
+
+.navbar-nav .nav-link.active {
+	background-color: $secondcolor;
+	color: $firstcolor;
+	font-weight: bold;
+}
+
+header {
+	background-image: url('../img/header.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	&::before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.4);
+		z-index: 0;
+	}
+}
+
+.header {
+	&-title {
+		transform: translateY(10%);
+		text-shadow: 8px 8px 5px #000000c9;
+	}
+
+	&-text {
+		font-size: 1.6rem;
+		font-weight: bold;
+		z-index: 1;
+
+		&p {
+			margin: 0;
+			text-shadow: 8px 6px 3px #000000c9;
+		}
+
+		& .btn {
+			box-shadow: 8px 8px 5px #000000c9;
+			transition: box-shadow 0.3s, background-color 0.3s;
+			background-color: $maincolor;
+			border: none;
+			font-size: 2rem;
+
+			&:hover {
+				box-shadow: 3px 3px 0 $secondcolor;
+				background-color: $maincolorhover;
+			}
+			&:focus {
+				box-shadow: 3px 3px 0 $secondcolor;
+				background-color: $maincolorhover;
+			}
+		}
+
+		&-shadow {
+			top: 25%;
+			left: 0;
+			width: 100%;
+			height: 50%;
+			background-color: rgba(0, 0, 0, 0.6);
+			z-index: -1;
+			filter: blur(70px);
+		}
+	}
+}
+
+
+// -------------------------------------------------------
+
+.accordion-button:not(.collapsed) {
+	background-color: $maincolor;
+	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 $maincolor;
+}
+
+.job h2 {
+	font-size: 4rem;
+}
+
+.accordion-button {
+	font-size: 2rem;
+
+	& .job-position {
+		font-size: 1.8rem;
+	}
+
+    & .job-year {
+        font-size: 1.6rem;
+    }
+}
+
+.job-inf {
+	background-color: #ddd;
+	& h3 {
+		font-size: 2.5rem;
+	}
+}
+
+// --------------------------------
+//   media
+
+@media (min-width: 992px) {
+	header::before {
+		background-color: rgba(0, 0, 0, 0.1);
+	}
+}
+
+@media (min-width: 1400px) {
+	header {
+		background-image: url('../img/headerxl.jpg');
+	}
+
+	.header-title {
+		transform: translate(20%, 10%);
+	}
+}
