@@ -31,7 +31,7 @@ nav {
 }
 
 .navbar-toggler {
-	font-size: 2.5rem;
+	font-size: 2rem;
 }
 
 // -----------------------------------------------------------------------------------
@@ -55,7 +55,7 @@ header {
 
 .header {
 	&-title {
-		margin-top: 10rem;  
+		margin-top: 10rem;
 		text-shadow: 8px 8px 5px #000000c9;
 		transform: translateY(10%);
 	}
@@ -100,28 +100,56 @@ header {
 }
 
 // -------------------------------------------------------
-.accordion-item {
-	border-bottom: 1px solid #333;
+
+.job {
+	& i {
+		display: none;
+		position: absolute;
+		color: rgba(0, 0, 0, 0.1);
+		z-index: -1;
+
+		&:first-of-type {
+			top: 3%;
+			left: 0;
+			font-size: 50rem;
+			animation: animation 10s infinite linear;
+		}
+
+		&:nth-child(2) {
+			right: 0%;
+			font-size: 25rem;
+			transform: rotate(45deg);
+		}
+
+		&:last-of-type {
+			right: 0;
+			bottom: 10%;
+			font-size: 10rem;
+		}
+	}
+
+	&-inf {
+		background-color: #ddd;
+	}
 }
+
+.accordion {
+	&-button{
+		font-size: 2rem;
+
+		& .job-position {
+			font-size: 1.8rem;
+		}
+	
+		& .job-year {
+			font-size: 1.6rem;
+		}
+	}
+}
+
 .accordion-button:not(.collapsed) {
 	background-color: $maincolor;
 	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 $maincolor;
-}
-
-.accordion-button {
-	font-size: 2rem;
-
-	& .job-position {
-		font-size: 1.8rem;
-	}
-
-	& .job-year {
-		font-size: 1.6rem;
-	}
-}
-
-.job-inf {
-	background-color: #ddd;
 }
 
 // -----------------------------------------
@@ -154,17 +182,33 @@ header {
 // --------------------------------
 //   media
 
+@keyframes animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 @media (min-width: 768px) {
 	.header {
 		&-title {
-			margin-top: 0;  
-		}}
+			margin-top: 0;
+		}
+	}
 }
 
 @media (min-width: 992px) {
 	.nav-link {
 		&:first-child {
 			margin-top: 0;
+		}
+	}
+
+	.job {
+		& i {
+			display: block;
 		}
 	}
 
