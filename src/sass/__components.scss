@@ -1,7 +1,12 @@
-$maincolor: #e480e0;
+// $maincolor: #e480e0;
+// $maincolor: #ddbc00;
+// $maincolor: #1ecc58;
+$maincolor: #dc6beb;
+$maincolor2: rgba(153, 43, 180, 0.562);
 $maincolorhover: #b967b7;
 $firstcolor: #fff;
 $secondcolor: #333;
+$secondcolor: #2c2c2c;
 $lightcolor: #ddd; 
 // #8626D9
 // #D92679
@@ -17,6 +22,11 @@ html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
 	font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .h1, h1 {

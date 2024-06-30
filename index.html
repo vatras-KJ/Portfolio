@@ -23,12 +23,11 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
 
-    <nav id="navbar" class="navbar position-fixed navbar-expand-lg bg-body-tertiary w-100">
-    <div class="container">
-      <a class="navbar-brand p-4" href="#aboutme">Karol Jajko</a>
-      <button class="navbar-toggler px-3 py-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+  <nav id="navbar" class="navbar w-100 position-fixed navbar-expand-lg bg-body-tertiary">
+    <div class="navbar-box container px-3">
+      <a class="navbar-brand p-4 " href="#aboutme">Karol Jajko</a>
+      <button class="navbar-toggler p-3 mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <!-- <span class="navbar-toggler-icon"></span> -->
         <span class="text-uppercase">menu</span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -42,23 +41,33 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
       </div>
     </div>
   </nav>
-    <header id="aboutme" class="vh-100 position-relative py-5">
-    <div class="header-box container-fluid d-flex flex-column flex-md-row justify-content-between justify-content-lg-between h-100 py-5 px-4">
-      <div class="header-title col-md-6 col-lg-7 text-center">
-        <h1 class="main-color text-uppercase fw-bold">Hi, I'm Karol</h1>
-      </div>
-      <div class="header-text text-light mt-5 mt-md-0 col-md-6 col-lg-5 align-content-center position-relative">
-        <div class="header-text-shadow position-absolute"></div>
-        <p class="p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus provident et praesentium facilis ex
-          voluptatem totam maiores labore quidem, iusto blanditiis, debitis perferendis aut officia unde adipisci
-          laudantium quaerat ipsum?</p>
-          <!-- dodać informacje o wykształceniu -->
-        <a href="#job" class="btn btn-light p-3 m-4 w-50 mt-5 text-uppercase">więcej</a>
-      </div>
+  <header id="aboutme" class="header vh-100 position-relative">
+
+  <div class="header-box container d-flex w-100 h-100 position-relative">
+
+    <div class="header-box-img h-100 object-fit-cover position-relative"> <img src="./dist/img/header.jpg" alt="">
+    <div class="header-box-img-text px-4 py-2 position-absolute"><p class="m-0 text-uppercase">x</p></div>
     </div>
-  </header>
+
+    <div class="header-box-elements h-100">
+      <p class="header-box-elements-text-btn text-uppercase m-0">open</p>
+
+      <div class="header-box-elements-text text-start">
+        <h1 class="text-uppercase fw-bold">Hi, I'm Karol</h1>
+        <p class="">Obecnie mieszkam w Stalowej Woli. Ukończyłem Zespół Szkół Elektrycznych nr 1 w Krakowie na kierunku
+          elektroniki i telekomunikacji w 2018r. Moja nauka programowania zaczeła się od mikrokontrolerów takich jak
+          arduino czy od mikro komputerów jak raspberry pi. Co doprowadziło do poznania front-end'u, który stała się moją
+          koljną pasją.</p>
+        <a href="#job" class="btn px-4 py-3 mt-5 text-uppercase">więcej</a>
+      </div>
+    
+    </div>
+
+  </div>
+
+</header>
   <main class="py-4">
-    <section id="job" class="job container py-5 position-relative d-flex flex-column align-items-center align-content-center">
+    <section id="job" class="job container py-5 position-relative d-flex flex-column align-items-center align-content-center overflow-hidden">
   <i class="bi bi-gear"></i>
   <i class="bi bi-display"></i>
   <i class="bi bi-pen"></i>
@@ -178,40 +187,201 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     </div>
   </section>
     <section id="skills" class="py-4">
-    <div class="skills-box container py-5">
-      <h2 class="text-uppercase text-center">Umiejętności</h2>
-      <div class="siklls-box-elements py-4">
-        <ul class="list-group d-flex flex-row flex-wrap pb-4">
-          <li class="list-group-item"><i class="fa-brands fa-html5"></i>HTML</li>
-          <li class="list-group-item"><i class="fa-brands fa-css3-alt"></i>CSS</li>
-          <li class="list-group-item"><i class="fa-brands fa-js"></i>JavaScript</li>
-          <li class="list-group-item">SEO</li>
-          <li class="list-group-item"><i class="fa-brands fa-webflow"></i>WebFlow</li>
-          <li class="list-group-item">Sass</li>
-          <li class="list-group-item">Visual Studio Code</li>
-          <li class="list-group-item"><i class="fa-brands fa-gulp"></i>Gulp</li>
-          <li class="list-group-item"><i class="fa-brands fa-github"></i>Git</li>
-          <li class="list-group-item"><i class="fa-brands fa-jira"></i>Jira</li>
-          <li class="list-group-item"><i class="fa-brands fa-windows"></i>Znajomość systemu Windows</li>
-          <li class="list-group-item"><i class="fa-solid fa-network-wired"></i>Sieci LAN</li>
-          <li class="list-group-item">SATEL</li>
-          <li class="list-group-item">Provision</li>
-          <li class="list-group-item">Hikvision</li>
-          <li class="list-group-item">CCTV</li>
-          <li class="list-group-item">SSWiN</li>
-          <li class="list-group-item">KD</li>
-          <li class="list-group-item">SEP 1kV</li>
-          <li class="list-group-item"><i class="fa-solid fa-satellite-dish"></i>Instalacje antenowe</li>
-          <li class="list-group-item"><i class="fa-solid fa-car"></i>Prawo jazdy kat. B</li>
-        </ul>
-        <p class="text-small-title text-center text-uppercase py-4 fw-bold">języki</p>
-        <ul class="list-group d-flex flex-row">
-          <li class="list-group-item col-6">Polski <span class="text-center">- ojczysty</span></li>
-          <li class="list-group-item col-6">Angielski<span>- podstawowy</span></li>
+  <div class="skills-box container py-5">
+
+    <!-- umiejętności -->
+    <h2 class="text-uppercase text-center text-light">Umiejętności</h2>
+    <div class="siklls-box-elements py-4">
+      <ul class="list-group d-flex flex-row flex-wrap pb-4">
+        <li class="list-group-item"><i class="fa-brands fa-html5"></i>HTML</li>
+        <li class="list-group-item"><i class="fa-brands fa-css3-alt"></i>CSS</li>
+        <li class="list-group-item"><i class="fa-brands fa-js"></i>JavaScript</li>
+        <li class="list-group-item">SEO</li>
+        <li class="list-group-item"><i class="fa-brands fa-webflow"></i>WebFlow</li>
+        <li class="list-group-item">Sass</li>
+        <li class="list-group-item"><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
+        <li class="list-group-item">Visual Studio Code</li>
+        <li class="list-group-item"><i class="fa-brands fa-gulp"></i>Gulp</li>
+        <li class="list-group-item"><i class="fa-brands fa-github"></i>Git</li>
+        <li class="list-group-item"><i class="fa-brands fa-jira"></i>Jira</li>
+        <li class="list-group-item"><i class="fa-brands fa-windows"></i>Znajomość systemu Windows</li>
+        <li class="list-group-item"><i class="fa-solid fa-network-wired"></i>Sieci LAN</li>
+        <li class="list-group-item">SATEL</li>
+        <li class="list-group-item">Provision</li>
+        <li class="list-group-item">Hikvision</li>
+        <li class="list-group-item">CCTV</li>
+        <li class="list-group-item">SSWiN</li>
+        <li class="list-group-item">KD</li>
+        <li class="list-group-item"><i class="fa-solid fa-satellite-dish"></i>Instalacje antenowe</li>
+        <li class="list-group-item"><i class="fa-solid fa-car"></i>Prawo jazdy kat. B</li>
+      </ul>
+
+      <!-- Języki -->
+      <p class="text-small-title text-center text-uppercase py-4 fw-bold text-light">języki</p>
+      <ul class="list-group d-flex flex-row pb-4 justify-content-center">
+        <li class="list-group-item col-5 col-md-5 ">Polski <span class="text-center">- ojczysty</span></li>
+        <li class="list-group-item col-6 col-md-5">Angielski<span>- podstawowy</span></li>
+      </ul>
+    </div>
+
+    <!-- Kursy i szkolenia -->
+    <div class="courses-box py-4">
+    <p class="text-small-title text-center text-uppercase py-2 fw-bold text-light">Kursy & szkolenia</p>
+    <hr class="text-light">
+    <div id="carouselExampleCaptions" class="carousel slide ">
+      <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+
+      </div>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="d-block w-75 text-light mx-auto">
+            <p class="text-center">Kursy na platformie Udemy</p>
+            <ul class="list-group d-flex flex-row flex-wrap pb-4">
+              <li class="list-group-item">GIT od podstaw dla każdego</li>
+              <li class="list-group-item">Kurs Tworzenia Stron WWW cz. I - HTML, CSS, RWD</li>
+              <li class="list-group-item">Kurs Tworzenia Stron WWW cz. II - SASS, JS, Bootstrap</li>
+              <li class="list-group-item">JavaScript - Jedyny Kurs, Którego Potrzebujesz</li>
+              <li class="list-group-item">15 Komponentów Na Strony WWW</li>
+              <li class="list-group-item">10 projektów w czystym JavaScript</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-block w-75 text-light mx-auto">
+            <p class="text-center">Kursy na platformie MMC SCHOOL</p>
+            <ul class="list-group d-flex flex-row flex-wrap justify-content-center pb-4">
+              <li class="list-group-item">Kurs Tworzenia Stron WWW cz. III</li>
+              <li class="list-group-item">Kurs Tworzenia Stron WWW cz. IV</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-block w-75 text-light mx-auto">
+            <p class="text-center">Kursy na platformie Nueve</p>
+            <ul class="list-group d-flex flex-row justify-content-center pb-4">
+              <li class="list-group-item">Webflow Intro</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-block w-75 text-light mx-auto">
+            <p class="text-center">Kursy na platformie Eduweb</p>
+            <ul class="list-group d-flex flex-row flex-wrap pb-4">
+              <li class="list-group-item">Vue.js - od podstaw</li>
+              <li class="list-group-item">Webflow - Strony WWW bez Kodowania</li>
+              <li class="list-group-item">Webflow - Techniki Zaawansowane i CMS</li>
+              <li class="list-group-item">Webflow - E-commerce</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-block w-75 text-light mx-auto">
+            <p class="text-center">Szkolenia firmowe</p>
+            <ul class="list-group d-flex flex-row flex-wrap pb-4">
+              <li class="list-group-item">Microsoft Excel poziom początkujący - Emitel</li>
+              <li class="list-group-item">Microsoft Excel poziom średnio-zaawansowany - Emitel</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-block w-75 text-light mx-auto">
+            <p class="text-center">Kwalifikacje</p>
+            <ul class="list-group d-flex flex-row flex-wrap pb-4">
+              <li class="list-group-item">Kwalifikacja E6 Wykonywanie instalacji urządzeń elektronicznych</li>
+              <li class="list-group-item">Kwalifikacja E20 Eksploatacja urządzeń elektronicznych</li>
+              <li class="list-group-item">SEP 1kV</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-block w-75 text-light mx-auto">
+            <p class="text-center">Pozostałe</p>
+            <ul class="list-group d-flex flex-row flex-wrap pb-4">
+              <li class="list-group-item">Praktyka - automatyka, instalacje elektryczna - Miejskie Przedsiębiorstwo Wodociągów i Kanalizacji S.A.</li>
+              <li class="list-group-item">Projekt z języka angielskiego zawodowego w branży elektronicznej "Centrum Kompetencji Zawodowych w branży elektryczno-elektronicznej (E) w Gminie Miejskiej Kraków" - Zespół Ekonomi Oświaty w Krakowie</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+
+  </div>
+</section>
+    <section class="map-skills py-4">
+      <h2 class="text-center text-uppercase py-5">mapa rozwoju</h2>
+      <div class="timeline container position-relative w-100">
+        <ul class="d-flex flex-column">
+          <li>
+            <p>Dalej rozwijać umiejętności</p>
+            <p><i class="fa-brands fa-html5"></i>HTML<i class="fa-brands fa-css3-alt"></i>CSS<i class="fa-brands fa-js"></i>JavaScript</p>
+          </li>
+          <li>
+            <p>Kontynułować naukę</p>
+            <p><i class="fa-brands fa-vuejs"></i>VUE</p>
+            <p><i class="fa-brands fa-webflow"></i>WebFlow</p>
+          </li>
+          <li>
+            <!-- <p>Kontynułować naukę</p>
+            <p><i class="fa-brands fa-webflow"></i>WebFlow</p> -->
+            <p>Nauczyć się Tailwind</p>
+          </li>
+          <li>
+            <p>Rozwijać język Angielski</p>
+          </li>
+          <li>
+            <p>Nauczyć się języka Hiszpańskiego</p>
+          </li>
+          <li>
+            <p>Założyć firmę</p>
+          </li>
         </ul>
       </div>
-    </div>
-  </section>
+    </section>
+
+   
   </main>
 
   <a href="./page/welcome.html" class="btn btn-dark m-4">welcome page</a>
@@ -220,6 +390,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="./dist/js/main.min.js"></script>
 </body>
 
 </html>
