@@ -1,0 +1,13 @@
+@media (min-width: 992px) {
+	.nav-link {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.job {
+		& i {
+			display: block;
+		}
+	}
+}

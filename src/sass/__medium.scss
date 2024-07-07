@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+	.header-box-elements-text {
+		& h1 {
+			padding: 3rem 1rem;
+		}
+
+		& p {
+			font-size: 2rem;
+		}
+
+		& .btn {
+			font-size: 1.8rem;
+		}
+	}
+}

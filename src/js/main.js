@@ -1,10 +1,12 @@
 const nav = document.querySelector('.navbar-collapse')
 const btnOpenHeader = document.querySelector('.header-box-elements')
-const btnCloseHeader = document.querySelector('.header-box-img-text')
+const btnCloseHeader = document.querySelector('.header-box-img-btn')
 const btnOpen = document.querySelector('.header-box-elements-text-btn')
 const headerImg = document.querySelector('.header-box-img')
 const aboutUsBox = document.querySelector('.header-box-elements')
 const aboutUsText = document.querySelector('.header-box-elements-text')
+const btnSkillMap = document.querySelector('.map-skills-box-btn')
+const sillMap = document.querySelector('.map-skills-timeline')
 
 const closeNavbar = () => {
     if(nav.classList.contains('show')){
@@ -35,6 +37,18 @@ const closeAboutMeSection = () => {
         btnCloseHeader.classList.remove('display--show')
 }
 
+const openSkillMap = () => {
+    const checkMap = sillMap.classList.contains('display-timeline--show')
+    sillMap.classList.toggle('display-timeline--show')
+
+    if(checkMap == true) {
+         btnSkillMap.innerText = 'pokaż'
+    } else {
+        btnSkillMap.innerText = 'ukryj'
+    } 
+}
+
 btnOpenHeader.addEventListener('click', openAboutMeSection)
 btnCloseHeader.addEventListener('click', closeAboutMeSection)
+btnSkillMap.addEventListener('click', openSkillMap)
 
