@@ -10,4 +10,21 @@
 			display: block;
 		}
 	}
+
+	.list-group {
+		&-item {
+			&--el {
+				display: flex;
+			}
+		}
+	
+		&-btn {
+			display: none;
+		}
+		
+		&-next {
+			display: none;
+		}
+	}
+
 }

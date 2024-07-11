@@ -53,75 +53,93 @@ nav {
 		width: 100%;
 		background-color: #fff;
 		background-color: transparent;
-	}
 
-	&-box-img {
-		width: 80%;
-		height: 100%;
-		// clip-path: polygon(0% 0, 100% 0, 67% 100%, 0 100%);
-		clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
-		transition: width 0.3s ease-out;
-
-		& img {
-			width: 100%;
+		&-img {
+			width: 80%;
 			height: 100%;
-			object-fit: cover;
-			object-position: 45%;
+			// clip-path: polygon(0% 0, 100% 0, 67% 100%, 0 100%);
+			clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
+			transition: width 0.3s ease-out;
+	
+			& img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: 45%;
+			}
+	
+			&-btn {
+				display: none;
+				top: 4rem;
+				left: 20%;
+				background-color: #fff;
+				color: #333;
+				border-radius: 12px;
+				cursor: pointer;
+			}
+
+			&--close {
+				width: 20%;
+			}
 		}
 
-		&-btn {
-			display: none;
-			top: 4rem;
-			left: 20%;
-			background-color: #fff;
-			color: #333;
-			border-radius: 12px;
+		&-elements {
+			width: 20%;
+			align-content: center;
+			transition: width 0.3s ease-out;
 			cursor: pointer;
+
+			&-text {
+				display: none;
+				height: 100%;
+				padding: 0 1rem;
+			
+				& h1 {
+					margin-top: 3rem;
+					padding: 0 1rem;
+					font-size: 3.2rem;
+					text-align: center;
+					text-shadow: 5px 5px 20px rgba(65, 32, 80, 0.8);
+				}
+			
+				& p {
+					margin-top: 2rem;
+					padding: 0 1rem;
+					font-size: 1.6rem;
+					word-break: break-word;
+				}
+			
+				& .btn {
+					margin-top: 2rem;
+					width: 100%;
+					background-color: $maincolor;
+					color: #fff;
+					font-weight: bold;
+					font-size: 1.4rem;
+					letter-spacing: 2px;
+					border-radius: 12px;
+				}
+			}
+
+			& .header-box-elements-text-btn {
+				transform: rotate(90deg);
+				cursor: pointer;
+			}
+
+			&--open {
+				width: 80%;
+				cursor:default;
+			}
 		}
-	}
-}
 
-.header-box-elements {
-	width: 20%;
-	align-content: center;
-	transition: width 0.3s ease-out;
-	// background-color: #fff;
-
-	& .header-box-elements-text-btn {
-		transform: rotate(90deg);
-		cursor: pointer;
-	}
-}
-
-.header-box-elements-text {
-	display: none;
-	height: 100%;
-	padding: 0 1rem;
-
-	& h1 {
-		margin-top: 3rem;
-		padding: 0 1rem;
-		font-size: 3.2rem;
-		text-align: center;
-		text-shadow: 5px 5px 20px rgba(65, 32, 80, 0.8);
 	}
 
-	& p {
-		margin-top: 2rem;
-		padding: 0 1rem;
-		font-size: 1.6rem;
-		word-break: break-word;
-	}
+	// &--hide {
+	// 	display: none;
+	// }
 
-	& .btn {
-		margin-top: 2rem;
-		width: 100%;
-		background-color: $maincolor;
-		color: #fff;
-		font-weight: bold;
-		font-size: 1.4rem;
-		letter-spacing: 2px;
-		border-radius: 12px;
+	&--show {
+		display: inline-block;
 	}
 }
 
@@ -155,99 +173,64 @@ nav {
 	}
 }
 
-// .job {
-// 	& i {
-// 		display: none;
-// 		position: absolute;
-// 		color: rgba(0, 0, 0, 0.1);
-// 		z-index: -1;
-
-// 		&:first-of-type {
-// 			top: 3%;
-// 			left: 0;
-// 			font-size: 50rem;
-// 			animation: animation 10s infinite linear;
-// 		}
-
-// 		&:nth-child(2) {
-// 			right: 0%;
-// 			font-size: 25rem;
-// 			transform: rotate(45deg);
-// 		}
-
-// 		&:last-of-type {
-// 			right: 0;
-// 			bottom: 10%;
-// 			font-size: 10rem;
-// 		}
-// 	}
-
-// 	&-inf {
-// 		background-color: #ddd;
-// 	}
-// }
-
-// .accordion {
-// 	&-button {
-// 		font-size: 2rem;
-
-// 		& .job-position {
-// 			font-size: 1.8rem;
-// 		}
-
-// 		& .job-year {
-// 			font-size: 1.6rem;
-// 		}
-
-// 		&:not(.collapsed) {
-// 			background-color: $maincolor;
-// 			box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 $maincolor;
-// 		}
-// 	}
-
-// 	&-collapse {
-// 		background-color: #dc6beb36;
-// 	}
-// }
-
-// .accordion-button:not(.collapsed) {
-// 	background-color: $maincolor;
-// 	box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 $maincolor;
-// }
-
 // -----------------------------------------
 
-#skills {
+.skills {
 	background-color: $secondcolor;
 }
 
-.list-group-item {
-	border-color: $maincolor;
-}
+.list-group {
+	&-item {
+		margin: 0.5rem;
+		padding: 0.5rem 1.5rem;
+		font-size: 1.8rem;
+		background-color: $maincolor;
+		border-color: $maincolor;
+		border-radius: 8px;
+		&:first-child {
+			border-radius: 8px;
+		}
+	
+		& i {
+			margin-right: 1rem;
+		}
+	
+		& span {
+			margin-left: 2rem;
+			font-size: 1.4rem;
+		}
 
-.list-group-item:first-child {
-	border-radius: 8px;
+		&--el {
+			display: none;
+		}
+	}
+
+	&-btn {
+		cursor: pointer;
+		background-color: #333;
+		border-radius: 12;
+	}
+	
+	&-next {
+		display: flex;
+		flex-direction: row ;
+		flex-wrap: wrap;
+		height: 0;
+		opacity: 0;
+		transition: height .1s, opacity .3s;
+		z-index: -100;
+	
+		&-disply {
+			height: auto;
+			opacity: 1;
+			z-index: 0;
+		}
+	}
 }
 
 .list-group-item + .list-group-item {
 	border-top-width: 1px;
 	border-radius: 8px;
-}
-
-.list-group-item {
-	margin: 0.5rem;
-	padding: 0.5rem 1.5rem;
-	font-size: 1.8rem;
-	background-color: $maincolor;
-
-	& i {
-		margin-right: 1rem;
-	}
-
-	& span {
-		margin-left: 2rem;
-		font-size: 1.4rem;
-	}
 }
 
 .carousel {
@@ -338,6 +321,7 @@ nav {
 	}
 }
 
+// ----------------------------------
 .project {
 	&-box {
 		&-cards {
@@ -353,33 +337,67 @@ nav {
 
 				& .btn {
 					font-size: 1.6rem;
+					background-color: $maincolor;
+					border: none;
+					border-radius: 12px;
+					color: #333;
 				} 
 			}
 		}
 	}
 }
 
-
+// ----------------------------------
 // seting
 
-.header-box-img--close {
-	width: 20%;
-}
+// .header-box-img--close {
+// 	width: 20%;
+// }
 
-.header-box-elements--open {
-	width: 80%;
-}
+// .header-box-elements--open {
+// 	width: 80%;
+// }
 
-.display--hide {
-	display: none;
-}
+// .header--hide {
+// 	display: none;
+// }
 
-.display--show {
-	display: inline-block;
-}
+// .header--show {
+// 	display: inline-block;
+// }
 
 .display-timeline--show {
 	display: flex;
+}
+
+// --------------------------------
+.footer {
+	// color: $firstcolor;
+	background-color: $maincolor2;
+
+	&-box{
+		&-el {
+
+			& a {
+				transition: color .3s;
+				&:hover {
+					color: rgb(66, 66, 206);
+				}
+			}
+			&-contact {
+				& a {
+					font-size: 2rem;
+					font-weight: bold;
+				}
+			}
+
+			&-links {
+				& a {
+					font-size: 4rem;
+				}
+			}
+		}
+	}
 }
 
 // --------------------------------

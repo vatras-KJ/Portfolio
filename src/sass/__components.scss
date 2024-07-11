@@ -31,15 +31,22 @@ html {
 
 .h1, h1 {
     font-size: calc(4rem + 1.5vw);
+	text-transform: uppercase;
 }
 
-h2 {
+h2, h3 {
 	font-size: 4rem;
+	text-transform: uppercase;
 }
 
 p {
 	margin: 0;
 	font-size: 1.8rem;
+}
+
+a {
+	text-decoration: none;
+	color: #2c2c2c;
 }
 
 .main-color {

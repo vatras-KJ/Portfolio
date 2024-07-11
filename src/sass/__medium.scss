@@ -12,4 +12,10 @@
 			font-size: 1.8rem;
 		}
 	}
+
+	.carousel {
+		&-item {
+			min-height: 300px;
+		}
+	}
 }

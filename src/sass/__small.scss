@@ -18,8 +18,8 @@
 // }
 
 
-@media (min-width: 576px) and (min-height: 700px){
-	.header-box-img .display--show {
+@media (min-width: 576px) {
+	.header-box-img .header--show {
 		display: none;
 	}
 
@@ -53,9 +53,7 @@
 			font-size: 1.8rem;
 		}
 	}
-// .map-skills {
-	
-// }
+
 .map-skills-timeline {
 		& li {
 			width: 50%;
