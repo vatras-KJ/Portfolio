@@ -10,6 +10,7 @@ const sillMap = document.querySelector('.map-skills-timeline')
 const btnListSkills = document.querySelector('.list-group-btn')
 const btnListIcon = document.querySelector('.list-group-btn i')
 const listGroupList = document.querySelector('.list-group-next')
+const footerYear = document.querySelector('.footer-year')
 
 const closeNavbar = () => {
 	if (nav.classList.contains('show')) {
@@ -60,7 +61,15 @@ const openListSkill = () => {
     }
 }
 
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+
 btnOpenHeader.addEventListener('click', openAboutMeSection)
 btnCloseHeader.addEventListener('click', closeAboutMeSection)
 btnSkillMap.addEventListener('click', openSkillMap)
 btnListSkills.addEventListener('click', openListSkill)
+
+handleCurrentYear()
+AOS.init();
