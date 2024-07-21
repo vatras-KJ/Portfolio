@@ -24,7 +24,6 @@ nav {
 	margin: 0 0.5rem;
 	padding: 1rem;
 	color: $secondcolor;
-	// font-weight: bold;
 	transition: background-color 0.3s, color 0.3s;
 
 	&:first-child {
@@ -89,7 +88,6 @@ nav {
 		&-img {
 			width: 80%;
 			height: 100%;
-			// clip-path: polygon(0% 0, 100% 0, 67% 100%, 0 100%);
 			clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
 			transition: width 0.3s ease-out;
 
@@ -108,7 +106,6 @@ nav {
 				background-color: $firstcolor;
 				border-radius: 12px;
 				transition: background-color 0.3s;
-				// cursor: pointer;
 
 				&:hover,
 				&:focus {
@@ -126,7 +123,6 @@ nav {
 			width: 20%;
 			align-content: center;
 			transition: width 0.3s ease-out;
-			// cursor: pointer;
 
 			&-text {
 				display: none;
@@ -175,7 +171,6 @@ nav {
 				font-weight: bold;
 				letter-spacing: 2px;
 				transition: color 0.3s;
-				// cursor: pointer;
 			}
 
 			&:hover,
@@ -187,10 +182,6 @@ nav {
 			.header-box-elements:hover {
 				color: black;
 			}
-
-			// &:hover, &:focus > .header-box-elements-text-btn ~ .header-box-elements-text h1, p{
-			// 	color: #333
-			// }
 
 			&--open {
 				width: 80%;
@@ -204,10 +195,6 @@ nav {
 		text-decoration: none;
 		opacity: none;
 	}
-
-	// &--hide {
-	// 	display: none;
-	// }
 
 	&--show {
 		display: inline-block;
@@ -301,11 +288,6 @@ nav {
 	}
 }
 
-// .list-group-item + .list-group-item {
-// 	border-top-width: 1px;
-// 	border-radius: 8px;
-// }
-
 .carousel {
 	&-box li {
 		background-color: #fff;
@@ -370,9 +352,7 @@ nav {
 				align-self: flex-end;
 				transform: translateX(0px);
 			}
-			// &:nth-child(even)::after {
-			// 	left: -24px;
-			// }
+
 			&:nth-child(odd) {
 				transform: translateX(0px);
 			}
@@ -437,25 +417,6 @@ nav {
 	}
 }
 
-// ----------------------------------
-// seting
-
-// .header-box-img--close {
-// 	width: 20%;
-// }
-
-// .header-box-elements--open {
-// 	width: 80%;
-// }
-
-// .header--hide {
-// 	display: none;
-// }
-
-// .header--show {
-// 	display: inline-block;
-// }
-
 .display-timeline--show {
 	display: flex;
 }
@@ -481,7 +442,6 @@ nav {
 
 // --------------------------------
 .footer {
-	// color: $firstcolor;
 	background-color: $maincolor2;
 
 	&-box {
@@ -603,18 +563,6 @@ nav {
 		transform: translateY(0);
 	}
 }
-
-// --------------------------------
-//   media && animation
-
-// @keyframes animation {
-// 	0% {
-// 		transform: rotate(0deg);
-// 	}
-// 	100% {
-// 		transform: rotate(360deg);
-// 	}
-// }
 
 @import './_small';
 @import './_medium';
