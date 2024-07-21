@@ -27,4 +27,10 @@
 		}
 	}
 
+	.carousel {
+		&-item {
+			min-height: 250px;
+		}
+	}
+
 }

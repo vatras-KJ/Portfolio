@@ -11,6 +11,10 @@ const btnListSkills = document.querySelector('.list-group-btn')
 const btnListIcon = document.querySelector('.list-group-btn i')
 const listGroupList = document.querySelector('.list-group-next')
 const footerYear = document.querySelector('.footer-year')
+const cookieBox = document.querySelector('.cookie')
+const cookieBtn = document.querySelector('.cookie-btn')
+const disclaimerBtn = document.querySelector('.disclaimer-btn')
+const disclaimerText = document.querySelector('.disclaimer-text')
 
 const closeNavbar = () => {
 	if (nav.classList.contains('show')) {
@@ -61,6 +65,22 @@ const openListSkill = () => {
     }
 }
 
+const showCookie = () => {
+	const cookieEaten = localStorage.getItem('cookie')
+	if (cookieEaten) {
+		cookieBox.classList.add('hide')
+	}
+}
+
+const handleCookieBox = () => {
+	localStorage.setItem('cookie', 'true')
+	cookieBox.classList.add('hide')
+}
+
+const handleCookieBoxDisclaimer = () => {
+	disclaimerText.classList.toggle('hide')
+}
+
 const handleCurrentYear = () => {
 	const year = new Date().getFullYear()
 	footerYear.innerText = year
@@ -70,6 +90,9 @@ btnOpenHeader.addEventListener('click', openAboutMeSection)
 btnCloseHeader.addEventListener('click', closeAboutMeSection)
 btnSkillMap.addEventListener('click', openSkillMap)
 btnListSkills.addEventListener('click', openListSkill)
+cookieBtn.addEventListener('click', handleCookieBox)
+disclaimerBtn.addEventListener('click', handleCookieBoxDisclaimer)
+showCookie()
 
 handleCurrentYear()
 AOS.init();

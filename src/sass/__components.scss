@@ -4,8 +4,8 @@
 $maincolor: #dc6beb;
 $maincolor2: rgba(137, 26, 165, 0.562);
 $maincolorhover: #b967b7;
+$maincolorhover2: #470f418e;
 $firstcolor: #fff;
-$secondcolor: #333;
 $secondcolor: #2c2c2c;
 $lightcolor: #ddd; 
 // #8626D9
@@ -49,16 +49,28 @@ a {
 	color: #2c2c2c;
 }
 
-.main-color {
-	color: $maincolor;
+.btn-close {
+	--bs-btn-close-opacity: 1;
+	--bs-btn-close-hover-opacity: 1;
 }
 
-.accordion-flex {
-	display: flex;
-	align-items: start;
-	flex-direction: column;
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    color: #fff;
+	background-color: $maincolorhover;
+    border-color: $maincolorhover;
 }
+
+// .accordion-flex {
+// 	display: flex;
+// 	align-items: start;
+// 	flex-direction: column;
+// }
 
 .text-small-title {
 	font-size: 2.5rem;
+}
+
+.list-group-item + .list-group-item {
+	border-top-width: 1px;
+	border-radius: 8px;
 }

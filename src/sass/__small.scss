@@ -75,6 +75,36 @@
 			left: 50%;
 		}
 	}
+
+	.footer {
+		&-box{
+			&-el {
+				&-contact {
+					& a {
+						font-size: 1.6rem;
+					}
+				}
+	
+				&-links {
+					border-bottom: 0px solid $secondcolor;
+				}
+	
+				&-nav{
+					&-title {
+						& h4 {
+							font-size: 2.5rem;
+						}
+					}
+					&-links{
+						& .nav-link {
+							margin: 0.5rem 1rem;
+							font-size: 1.6rem;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 @media (min-width: 576px) and (orientation: landscape ) {

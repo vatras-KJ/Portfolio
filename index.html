@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -36,7 +37,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
           <a class="nav-link" href="#job">Kariera</a>
           <a class="nav-link" href="#skills">Umiejętności</a>
           <a class="nav-link" href="#project">Projekty</a>
-          <a class="nav-link" href="#">Zainteresowania</a>
+          <a class="nav-link" href="#hobby">Zainteresowania</a>
           <a class="nav-link" href="#contact">Kontakt</a>
         </div>
       </div>
@@ -51,7 +52,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
       <button type="button" class="btn-close" aria-label="Close"></button></div>
     </div>
 
-    <div class="header-box-elements h-100">
+    <div class="header-box-elements h-100" type="button">
       <p class="header-box-elements-text-btn text-uppercase m-0 pe-none">open</p>
 
       <div class="header-box-elements-text text-start">
@@ -60,7 +61,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
           elektroniki i telekomunikacji w 2018r. Moja nauka programowania zaczeła się od mikrokontrolerów takich jak
           arduino czy od mikro komputerów jak raspberry pi. Co doprowadziło do poznania front-end'u, który stała się moją
           koljną pasją.</p>
-        <a href="#job" class="btn px-4 py-3 text-uppercase">więcej</a>
+        <a href="#job" class="btn px-4 py-3 text-uppercase" type="button">więcej</a>
       </div>
     
     </div>
@@ -68,7 +69,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
   </div>
 
 </header>
-  <main class="py-4">
+  <main class="pt-4">
     <section id="job" class="job py-5 position-relative d-flex flex-column align-items-center align-content-center overflow-hidden">
   <!-- <i class="bi bi-gear"></i>
   <i class="bi bi-display"></i>
@@ -78,37 +79,43 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     
     <div class="job-box-elements px-4 py-3 d-flex flex-wrap justify-content-center">
       
-      <div class="job-box-element col-11 col-lg-5">
+      <div class="job-box-element col-11 col-lg-5" data-aos="fade-right" data-aos-easing="linear"
+      data-aos-duration="1000">
         <p class="job-box-element-title">Emitel S.A.</p>
         <p class="job-box-element-text">Wsparcie Operacyjne w Centrum Zarządzania Siecią</p>
         <p class="job-box-element-data">Kraków | kwiecień 2018 - lipiec 2019</p>
       </div>
 
-      <div class="job-box-element col-11 col-lg-5">
+      <div class="job-box-element col-11 col-lg-5" data-aos="fade-left" data-aos-easing="linear"
+      data-aos-duration="1000">
         <p class="job-box-element-title">Emitel S.A.</p>
         <p class="job-box-element-text">Młodszy specjalista ds. Nadzoru sieci</p>
-        <p class="job-box-element-data">Kraków | kwiecień 2018 - lipiec 2019</p>
+        <p class="job-box-element-data">Kraków | lipiec 2019 - październik 2022</p>
       </div>
 
-      <div class="job-box-element col-11 col-lg-5 ">
+      <div class="job-box-element col-11 col-lg-5" data-aos="fade-right" data-aos-easing="linear"
+      data-aos-duration="1100">
         <p class="job-box-element-title">Jansen Shredder Recycling B.V.</p>
         <p class="job-box-element-text">Utrzymanie ruchu</p>
         <p class="job-box-element-data">Zevenbergen | październik 2022 - luty 2023</p>
       </div>
 
-      <div class="job-box-element col-11 col-lg-5">
+      <div class="job-box-element col-11 col-lg-5" data-aos="fade-left" data-aos-easing="linear"
+      data-aos-duration="1100">
         <p class="job-box-element-title">EL-TECH </p>
         <p class="job-box-element-text">Instalator</p>
         <p class="job-box-element-data">Stalowa Wola | marzec 2023 - wrzesień 2023</p>
       </div>
 
-      <div class="job-box-element col-11 col-lg-5">
+      <div class="job-box-element col-11 col-lg-5" data-aos="fade-right" data-aos-easing="linear"
+      data-aos-duration="1200">
         <p class="job-box-element-title">Carkom</p>
         <p class="job-box-element-text">Elektronik</p>
         <p class="job-box-element-data">Stalowa Wola | styczeń 2024 - obecnie</p>
       </div>
 
-      <div class="job-box-element col-11 col-lg-5">
+      <div class="job-box-element col-11 col-lg-5" data-aos="fade-left" data-aos-easing="linear"
+      data-aos-duration="1200">
         <p class="job-box-element-title">Samozatrudnienie</p>
         <p class="job-box-element-data">2019 - obecnie</p>
       </div>
@@ -243,10 +250,11 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
         <li class="list-group-item"><i class="fa-brands fa-html5"></i>HTML</li>
         <li class="list-group-item"><i class="fa-brands fa-css3-alt"></i>CSS</li>
         <li class="list-group-item"><i class="fa-brands fa-js"></i>JavaScript</li>
-        <li class="list-group-item">SEO</li>
-        <li class="list-group-item"><i class="fa-brands fa-webflow"></i>WebFlow</li>
         <li class="list-group-item">Sass</li>
+        <li class="list-group-item">RWD</li>
+        <li class="list-group-item">SEO</li>
         <li class="list-group-item"><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
+        <li class="list-group-item"><i class="fa-brands fa-webflow"></i>WebFlow</li>
         <li class="list-group-item">Visual Studio Code</li>
         <li class="list-group-item"><i class="fa-brands fa-gulp"></i>Gulp</li>
         <li class="list-group-item"><i class="fa-brands fa-github"></i>Git</li>
@@ -273,7 +281,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
           <li class="list-group-item"><i class="fa-solid fa-satellite-dish"></i>Instalacje antenowe</li>
           <li class="list-group-item"><i class="fa-solid fa-car"></i>Prawo jazdy kat. B</li>
         </ul>
-        <p class="list-group-btn w-100 text-center py-3 my-3 text-light">pokaż więcej <i class="bi bi-caret-down pe-none"></i></p>
+        <p class="list-group-btn w-100 text-center py-3 my-3" type="button">pokaż więcej <i class="bi bi-caret-down pe-none"></i></p>
       </ul>
 
       <!-- Języki -->
@@ -289,7 +297,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
       <p class="text-small-title text-center text-uppercase py-2 fw-bold text-light">Kursy & szkolenia</p>
       <hr class="text-light">
       <div id="carouselExampleCaptions" class="carousel slide ">
-        <div class="carousel-indicators z-0">
+        <div class="carousel-indicators z-1">
 
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -353,10 +361,10 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
             <div class="d-block w-75 text-light mx-auto">
               <p class="text-center">Kursy na platformie Eduweb</p>
               <ul class="list-group d-flex flex-row flex-wrap pb-4">
-                <li class="list-group-item">Vue.js - od podstaw</li>
-                <li class="list-group-item">Webflow - Strony WWW bez Kodowania</li>
-                <li class="list-group-item">Webflow - Techniki Zaawansowane i CMS</li>
-                <li class="list-group-item">Webflow - E-commerce</li>
+                <li class="list-group-item">W trakcie -> Vue.js - od podstaw</li>
+                <li class="list-group-item">W trakcie -> Webflow - Strony WWW bez Kodowania</li>
+                <li class="list-group-item">W trakcie -> Webflow - Techniki Zaawansowane i CMS</li>
+                <li class="list-group-item">W trakcie -> Webflow - E-commerce</li>
               </ul>
             </div>
           </div>
@@ -437,6 +445,9 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
           <p>Nauczyć się Tailwind</p>
         </li>
         <li>
+          <p>Poznać <i class="bi bi-wordpress"></i>WordPress</p>
+        </li>
+        <li>
           <p>Udoskonalać umiejętności języka Angielskiego</p>
         </li>
         <li>
@@ -456,8 +467,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
           <img src="./dist/img/Dnd.png" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column justify-content-between">
             <h5 class="card-title">DnD Character Card</h5>
-            <p class="card-text py-4">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text py-4">Strona przedstawiająca częściowo karte postaci z gry DnD, gdzie tymczasowo można zmieniać dane postaci. </p>
            <div class="card-links">
             <a href="https://vatras-kj.github.io/DnDcharacterCard/" class="btn btn-primary px-4 py-2 m-2" target="_blank" rel="noopener"><i class="bi bi-globe"></i> Page</a>
             <a href="#" class="btn btn-primary px-4 py-2 m-2" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -469,8 +479,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
           <img src="./dist/img/carkom.png" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column justify-content-between">
             <h5 class="card-title">Carkom page</h5>
-            <p class="card-text py-4">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text py-4">Koncepcja prostej strony dla firmy carkom</p>
               <div class="card-links">
                 <a href="https://vatras-kj.github.io/CarKomProject/" class="btn btn-primary px-4 py-2  m-2" target="_blank" rel="noopener"><i class="bi bi-globe"></i> Page</a>
                 <a href="#" class="btn btn-primary px-4 py-2  m-2" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -483,8 +492,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
           <img src="./dist/img/irregular.png" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column justify-content-between">
             <h5 class="card-title">Irregular Vocabulary V.2.JS</h5>
-            <p class="card-text py-4">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text py-4">Strona do nauki angielskich nieregularnych czasowników i ich zasady stosowania. </p>
               <div class="card-links">
                 <a href="https://vatras-kj.github.io/IrregularVocabularyJS/" class="btn btn-primary px-4 py-2  m-2" target="_blank" rel="noopener"><i class="bi bi-globe"></i> Page</a>
                 <a href="#" class="btn btn-primary px-4 py-2  m-2" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
@@ -496,11 +504,9 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
         <div class="card order-4 col-11 col-md-4 col-lg-3 m-5 p-3">
           <img src="./dist/img/portfolio.png" class="card-img-top" alt="...">
           <div class="card-body d-flex flex-column justify-content-between">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text py-4">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <h5 class="card-title">Portfolio</h5>
+            <p class="card-text py-4">Bierzące portfolio.</p>
               <div class="card-links">
-                <a href="#" class="btn btn-primary px-4 py-2  m-2"><i class="bi bi-globe" target="_blank" rel="noopener"></i> Page</a>
                 <a href="#" class="btn btn-primary px-4 py-2  m-2" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
               </div>
            
@@ -510,25 +516,73 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
     </div>
 
   </section>
-    <a href="./page/welcome.html" class="btn btn-dark m-4">welcome page</a>
-    <a href="./page/404.html" class="btn btn-dark m-4">welcome 404</a>
+    <section id="hobby" class="hobby py-4">
+    <div class="hobby-box container text-center">
+        <div class="hobby-box-title py-2">
+            <h3>Prywatnie</h3>
+        </div>
+        <div class="hobby-box-text ">
+            <p>Jeżeli jesteś ciekaw/a mojego świata pełnego przygód, magicznych sworzeń i przepieknego krajobrazu od mórz do gór. To nie czekaj, wejdź przez portal.</p>
+            <button class="hobby-box-text-btn my-5 text-uppercase" type="button" disabled>Wchodzę</button>
+        </div>
+    </div>
+</section>
   </main>
-    <footer id="contact" class="footer py-4">
+
+  <section class="cookie">
+    <div class="container cookie-box py-5 px-4">
+      <p class="pb-3">Na mojej stronie portfolio używam Google Analytics do zbierania danych użytkowników, aby zrozumieć, w jaki sposób korzystasz z mojej witryny. 
+          Na podstawie tych danych poprawię jej wygląd i funkcjonalność. </p>
+
+      <button class="cookie-btn px-5 py-3 m-3">Akceptuje</button>
+      <button class="disclaimer-btn px-5 py-3 m-3">Pokaż zastrzeżenia</button>
+
+      <p class="disclaimer-text py-4 hide">Za Twoją zgodą Google Analytics będzie przetwarzać i gromadzić Twoje dane osobowe (pliki cookie i adres IP) w celu dostarczania cennych informacji. Google Analytics prześle Twoje dane do Stanów Zjednoczonych i będzie je przechowywać przez 2 miesiące.</p>
+  </div>
+  </section>
+   
+  <footer id="contact" class="footer py-4">
 <div class="footer-box container text-center px-4">
+
     <div class="footer-box-title py-4 ">
         <h3>Kontakt</h3>
     </div>
+
+
     <div class="footer-box-el text-start d-flex flex-wrap">
-        <div class="footer-box-el-contact mx-auto mb-4 col-12 col-sm-5 d-flex flex-column ">
+
+        <div class="footer-box-el-contact mx-auto mb-4 col-12 col-sm-5 d-flex flex-column">
             <a href="tel:+48786811289"><i class="bi bi-telephone me-2"></i> +48 786 811 289</a>
             <a href="mailto:karoljajko@gmail.com"><i class="bi bi-envelope-at me-2"></i> karoljajko@gmail.com</a>
         </div>
-        <div class="footer-box-el-links mx-auto mt-4 text-center text-md-left col-12 col-sm-5">
+
+        <div class="footer-box-el-links mx-auto mt-4 mt-sm-0 text-center text-md-left col-12 col-sm-5">
             <a href="https://github.com/vatras-KJ" class="m-2" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
             <a href="https://www.linkedin.com/in/karol-jajko-a17035242/" class="m-2" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
             <a href="https://www.instagram.com/j98kv/" class="m-2" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
         </div>
+
+        <div class="footer-box-el-nav text-center col-12">
+            <div class="footer-box-el-nav-title pt-4 pb-2 mt-3">
+                <h4 class="text-uppercase fw-bold">linki</h4>
+            </div>
+            <div class="footer-box-el-nav-links d-flex flex-wrap justify-content-start justify-content-lg-center">
+                <a class="nav-link" href="#aboutme">O mnie</a>
+                <a class="nav-link" href="#job">Kariera</a>
+                <a class="nav-link" href="#skills">Umiejętności</a>
+                <a class="nav-link" href="#project">Projekty</a>
+                <a class="nav-link" href="#">Zainteresowania</a>
+                <a class="nav-link" href="#contact">Kontakt</a>
+                <a class="nav-link" href="./page/404.html">404</a>
+                <a class="nav-link" href="./page/welcome.html">welcome</a>
+            </div>
+        </div>
+        <div class="footer-copyright text-center pt-4 pb-2 col-12">
+            <p><span class="footer-year"></span>&copy;created by user github Vatras-KJ</p>
+        </div>
     </div>
+
+
 </div>
 </footer>
 
@@ -536,6 +590,7 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./dist/js/main.min.js"></script>
 </body>
 
