@@ -549,38 +549,30 @@ nav {
 // --------------------------------
 // cookie
 // --------------------------------
-.hide {
-	display: none;
-}
-
 .cookie {
 	width: 100%;
-	background-color: #fff;
+	background-color: $firstcolor;
 	position: fixed;
 	bottom: 0;
-}
 
-.cookie-box {
-	// position: fixed;
-	// bottom: 0;
-	width: 100%;
-	text-align: center;
-	font-size: 2rem;
-	background-color: #fff;
-	opacity: 0;
-	transform: translateY(100%);
-	animation: show-cookies 0.5s 0.5s forwards;
-}
+	&-box {
+		text-align: center;
+		font-size: 2rem;
+		opacity: 0;
+		transform: translateY(100%);
+		animation: show-cookies 0.5s 0.5s forwards;
 
-.cookie-box::before {
-	content: '';
-	position: absolute;
-	top: -280px;
-	right: 50px;
-	width: 400px;
-	height: 400px;
-	background-image: url('https://lezebre.lu/images/detailed/26/65626-JDM-Cookie-Monster.png');
-	background-size: cover;
+		&::before {
+			content: '';
+			position: absolute;
+			top: -280px;
+			right: 50px;
+			width: 400px;
+			height: 400px;
+			background-image: url('https://lezebre.lu/images/detailed/26/65626-JDM-Cookie-Monster.png');
+			background-size: cover;
+		}
+	}
 }
 
 .cookie-btn, .disclaimer-btn {
@@ -601,9 +593,9 @@ nav {
 	}
 }
 
-// .cookie-btn:hover {
-// 	background-color: #1b75ad;
-// }
+.hide {
+	display: none;
+}
 
 @keyframes show-cookies {
 	to {
