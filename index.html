@@ -2,13 +2,11 @@
 <html lang="pl">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4T2WC34NKX"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4T2WC34NKX"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-4T2WC34NKX');
 </script>
   <meta charset="UTF-8">
@@ -36,7 +34,8 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
   <nav id="navbar" class="navbar w-100 position-fixed navbar-expand-lg bg-body-tertiary z-3">
     <div class="navbar-box container px-3">
-      <a class="navbar-brand p-4 " href="#aboutme">Karol Jajko</a>
+      <a class="navbar-brand p-4 " href="#aboutme">Karol Jajko</a> 
+      <a href="tel:+48786811289" class="navbar-brand-tel mx-3"><i class="bi bi-telephone me-2"></i>786 811 289</a>
       <button class="navbar-toggler p-3 mx-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="text-uppercase">menu</span>
@@ -437,29 +436,15 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
         <div class="hobby-box-title py-2">
             <h3>Prywatnie</h3>
         </div>
-        <div class="hobby-box-text ">
+        <div class="hobby-box-text d-flex flex-column align-items-center">
             <p>Jeżeli jesteś ciekaw/a mojego świata pełnego przygód, magicznych sworzeń i przepieknego krajobrazu od mórz do gór. To nie czekaj, wejdź przez portal.</p>
-            <button class="hobby-box-text-btn my-5 text-uppercase" type="button" disabled>Wchodzę</button>
+            <!-- <button class="hobby-box-text-btn my-5 text-uppercase" type="button"> <a href="./page/404.html">Wchodzę</a></button> -->
+            <a class="hobby-box-text-btn my-5 text-uppercase d-flex align-items-center justify-content-center" href="./page/404.html">Wchodzę</a>
+           
         </div>
     </div>
 </section>
   </main>
-
-  <section class="cookie">
-    <div class="container cookie-box py-5 px-4">
-      <p class="pb-3">Na mojej stronie portfolio używam Google Analytics do zbierania danych użytkowników, aby
-        zrozumieć, w jaki sposób korzystasz z mojej witryny.
-        Na podstawie tych danych poprawię jej wygląd i funkcjonalność. </p>
-
-      <button class="cookie-btn px-5 py-3 m-3">Akceptuje</button>
-      <button class="disclaimer-btn px-5 py-3 m-3">Pokaż zastrzeżenia</button>
-
-      <p class="disclaimer-text py-4 hide">Za Twoją zgodą Google Analytics będzie przetwarzać i gromadzić Twoje dane
-        osobowe (pliki cookie i adres IP) w celu dostarczania cennych informacji. Google Analytics prześle Twoje dane do
-        Stanów Zjednoczonych i będzie je przechowywać przez 2 miesiące.</p>
-    </div>
-  </section>
-
   <footer id="contact" class="footer py-4">
 <div class="footer-box container text-center px-4">
 
@@ -470,14 +455,15 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
     <div class="footer-box-el text-start d-flex flex-wrap">
 
-        <div class="footer-box-el-contact mx-auto mb-4 col-12 col-sm-5 d-flex flex-column">
+        <div class="footer-box-el-contact mx-auto mb-4 col-12 col-sm-6 d-flex flex-column">
             <a href="tel:+48786811289"><i class="bi bi-telephone me-2"></i> +48 786 811 289</a>
             <a href="mailto:karoljajko@gmail.com"><i class="bi bi-envelope-at me-2"></i> karoljajko@gmail.com</a>
+            <a href="./download/CV_Karol_Jajko.pdf" download="CV_Karol_Jajko.pdf" class="btn btn-danger my-4"><i class="bi bi-file-earmark-arrow-down me-2"></i>Pobierz CV</a>
         </div>
 
         <div class="footer-box-el-links mx-auto mt-4 mt-sm-0 text-center text-md-left col-12 col-sm-5">
-            <a href="https://github.com/vatras-KJ" class="m-2" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
-            <a href="https://www.linkedin.com/in/karol-jajko-a17035242/" class="m-2" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/vatras-KJ" class="" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+            <a href="https://www.linkedin.com/in/karol-jajko-a17035242/" class="" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
             <a href="https://www.instagram.com/j98kv/" class="m-2" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
         </div>
 
@@ -504,7 +490,21 @@ integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEw
 
 </div>
 </footer>
+  <section class="cookie">
+    <div class="container cookie-box py-5 px-4">
+      <p class="pb-3">Na mojej stronie portfolio używam Google Analytics do zbierania danych użytkowników, aby
+        zrozumieć, w jaki sposób korzystasz z mojej witryny.
+        Na podstawie tych danych poprawię jej wygląd i funkcjonalność. </p>
 
+      <button class="cookie-btn px-5 py-3 m-3">Akceptuje</button>
+      <button class="disclaimer-btn px-5 py-3 m-3">Pokaż zastrzeżenia</button>
+
+      <p class="disclaimer-text py-4 hide-cookies">Za Twoją zgodą Google Analytics będzie przetwarzać i gromadzić Twoje dane
+        osobowe (pliki cookie i adres IP) w celu dostarczania cennych informacji. Google Analytics prześle Twoje dane do
+        Stanów Zjednoczonych i będzie je przechowywać przez 2 miesiące.</p>
+    </div>
+  </section>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>

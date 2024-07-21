@@ -68,17 +68,17 @@ const openListSkill = () => {
 const showCookie = () => {
 	const cookieEaten = localStorage.getItem('cookie')
 	if (cookieEaten) {
-		cookieBox.classList.add('hide')
+		cookieBox.classList.add('hide-cookies')
 	}
 }
 
 const handleCookieBox = () => {
 	localStorage.setItem('cookie', 'true')
-	cookieBox.classList.add('hide')
+	cookieBox.classList.add('hide-cookies')
 }
 
 const handleCookieBoxDisclaimer = () => {
-	disclaimerText.classList.toggle('hide')
+	disclaimerText.classList.toggle('hide-cookies')
 }
 
 const handleCurrentYear = () => {
