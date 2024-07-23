@@ -25,19 +25,13 @@ const closeNavbar = () => {
 document.addEventListener('click', closeNavbar)
 
 const openAboutMeSection = () => {
-	// schowaj pasek otweirania aboutUs header
-	// btnOpen.classList.add('header--hide')
-	// zmniejszenie img header
 	headerImg.classList.add('header-box-img--close')
-	// Powiększenie box aboutUs header
 	aboutUsBox.classList.add('header-box-elements--open')
-	// nadanie display na tekst
 	aboutUsText.classList.add('header--show')
 	btnCloseHeader.classList.add('header--show')
 }
 
 const closeAboutMeSection = () => {
-	// btnOpen.classList.remove('header--hide')
 	headerImg.classList.remove('header-box-img--close')
 	aboutUsBox.classList.remove('header-box-elements--open')
 	aboutUsText.classList.remove('header--show')
@@ -92,7 +86,7 @@ btnSkillMap.addEventListener('click', openSkillMap)
 btnListSkills.addEventListener('click', openListSkill)
 cookieBtn.addEventListener('click', handleCookieBox)
 disclaimerBtn.addEventListener('click', handleCookieBoxDisclaimer)
-showCookie()
 
+showCookie()
 handleCurrentYear()
 AOS.init();

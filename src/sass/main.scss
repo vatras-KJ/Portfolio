@@ -90,7 +90,6 @@ nav {
 }
 
 // -----------------------------------------
-
 .header {
 	padding-top: 7rem;
 	background-color: #fff;
@@ -245,7 +244,6 @@ nav {
 	}
 }
 // -----------------------------------------
-
 .skills {
 	background-color: $secondcolor;
 }
@@ -443,7 +441,6 @@ nav {
 	display: flex;
 }
 // --------------------------------
-
 .hobby {
 	background-color: $secondcolor;
 	&-box {
@@ -542,9 +539,6 @@ nav {
 	}
 }
 
-// --------------------------------
-// cookie
-// --------------------------------
 .cookie {
 	width: 100%;
 	background-color: $firstcolor;
@@ -591,7 +585,7 @@ nav {
 .hide-cookies {
 	display: none;
 }
-
+// --------------------------------
 .erorr {
 	background-color: $maincolor2;
 	min-height: 100vh;
