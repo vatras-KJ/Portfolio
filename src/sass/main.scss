@@ -20,11 +20,11 @@ nav {
 
 	&-tel {
 		display: none;
-		padding: .5rem 1.5rem;
+		padding: 0.5rem 1.5rem;
 		font-size: 1.8rem;
 		border-radius: 12px;
-		background-color: #EBDC6B;
-		transition: transform .3s, background-color .3s;
+		background-color: #ebdc6b;
+		transition: transform 0.3s, background-color 0.3s;
 
 		&:hover {
 			transform: scale(1.1);
@@ -332,11 +332,14 @@ nav {
 				border: 1px solid $secondcolor;
 			}
 
-			&:focus{
+			&:focus {
 				outline: none;
-				border: 1px solid $secondcolor;
-				background-color: $lightcolor;
+				color: $maincolorhover2;
 			}
+			&:focus:hover {
+				color: $secondcolor;
+			}
+
 		}
 	}
 
@@ -457,11 +460,11 @@ nav {
 				text-align: center;
 				border: none;
 				border-radius: 50%;
-				transition: background-color .3s;
+				transition: background-color 0.3s;
 
 				&:hover,
 				&:focus {
-					background-color: #EBDC6B;
+					background-color: #ebdc6b;
 					outline: none;
 				}
 			}
@@ -497,7 +500,7 @@ nav {
 				& .btn {
 					width: 200px;
 					border-radius: 12px;
-					transition: transform .3s;
+					transition: transform 0.3s;
 
 					&:hover {
 						transform: scale(1.1);
@@ -568,7 +571,7 @@ nav {
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
 	letter-spacing: 2p;
-	transition: color .3s, background-color 0.3s;
+	transition: color 0.3s, background-color 0.3s;
 
 	&:hover {
 		color: $firstcolor;
@@ -578,6 +581,10 @@ nav {
 	&:focus {
 		outline: none;
 		color: $maincolorhover;
+	}
+
+	&:focus:hover {
+		color: $firstcolor;
 	}
 }
 
@@ -609,7 +616,7 @@ nav {
 		color: $firstcolor;
 		border-radius: 12px;
 		background-color: $maincolor2;
-		transition: background-color .3s;
+		transition: background-color 0.3s;
 
 		&:hover {
 			background-color: $maincolorhover2;
