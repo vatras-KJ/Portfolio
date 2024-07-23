@@ -547,6 +547,7 @@ nav {
 	background-color: $firstcolor;
 	position: fixed;
 	bottom: 0;
+	box-shadow: 0px 5px 25px 5px rgba(66, 68, 90, 1);
 
 	&-box {
 		text-align: center;
@@ -554,17 +555,6 @@ nav {
 		opacity: 0;
 		transform: translateY(100%);
 		animation: show-cookies 0.5s 0.5s forwards;
-
-		&::before {
-			content: '';
-			position: absolute;
-			top: -280px;
-			right: 50px;
-			width: 400px;
-			height: 400px;
-			background-image: url('https://lezebre.lu/images/detailed/26/65626-JDM-Cookie-Monster.png');
-			background-size: cover;
-		}
 	}
 }
 
@@ -580,11 +570,14 @@ nav {
 	letter-spacing: 2p;
 	transition: color .3s, background-color 0.3s;
 
-	&:hover,
-	&:focus {
+	&:hover {
 		color: $firstcolor;
 		background-color: $maincolorhover;
+	}
+
+	&:focus {
 		outline: none;
+		color: $maincolorhover;
 	}
 }
 
