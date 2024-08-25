@@ -328,15 +328,6 @@ nav {
 				background-color: $maincolorhover;
 				border: 1px solid $secondcolor;
 			}
-
-			&:focus {
-				outline: none;
-				color: $maincolorhover2;
-			}
-			&:focus:hover {
-				color: $secondcolor;
-			}
-
 		}
 	}
 
