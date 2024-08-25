@@ -1,27 +1,60 @@
 @use '../_components' as *;
 
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
 .welcome-box {
 	background-color: $secondcolor;
-	box-shadow: 10px 10px 10px $secondcolor;
+	box-shadow: 10px 10px 30px $secondcolor;
+	min-height: 50vh;
+
+	&:first-child {
+		letter-spacing: 2px;
+	}
 
 	& .welcome-title {
-		color: $maincolor;
+		color: #ebdc6b;
+		font-size: 8rem;
+		letter-spacing: 4px;
 	}
 
 	& .welcome-text {
-		letter-spacing: .1rem;
+		padding: 4rem 2rem;
+		font-size: 2rem;
+		letter-spacing: 1.5px;
+		line-height: 30px;
 	}
 
 	& .btn {
+		margin-top: 2rem;
+		font-size: 2rem;
+		letter-spacing: 1.2px;
+		text-transform: uppercase;
 		transition: background-color 0.3s;
 		background-color: $maincolor;
+		background-color: #ebdc6b;
 		border: none;
+		border-radius: 12px;
+		animation: scale 2s 1s infinite;
 
 		&:hover {
-			 background-color: $maincolorhover;
+			 background-color: #ecd83b;
 		}
-		&:focus {
-			 background-color: $maincolorhover;
-		}
+	}
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
 	}
 }

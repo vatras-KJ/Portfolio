@@ -150,7 +150,6 @@ nav {
 					padding: 0 1rem;
 					font-size: 3.2rem;
 					text-align: center;
-					text-shadow: 5px 5px 20px rgba(65, 32, 80, 0.8);
 				}
 
 				& p {
@@ -586,37 +585,37 @@ nav {
 	display: none;
 }
 // --------------------------------
-.erorr {
-	background-color: $maincolor2;
-	min-height: 100vh;
-	width: 100%;
+// .erorr {
+// 	background-color: $maincolor2;
+// 	min-height: 100vh;
+// 	width: 100%;
 
-	& p:first-child {
-		font-size: 4rem;
-	}
+// 	& p:first-child {
+// 		font-size: 4rem;
+// 	}
 
-	&-text {
-		font-size: 2.5rem;
-	}
+// 	&-text {
+// 		font-size: 2.5rem;
+// 	}
 
-	& h1 {
-		font-size: 16rem;
-	}
+// 	& h1 {
+// 		font-size: 16rem;
+// 	}
 
-	& a {
-		padding: 1rem 2rem;
-		width: 200px;
-		font-size: 2rem;
-		color: $firstcolor;
-		border-radius: 12px;
-		background-color: $maincolor2;
-		transition: background-color 0.3s;
+// 	& a {
+// 		padding: 1rem 2rem;
+// 		width: 200px;
+// 		font-size: 2rem;
+// 		color: $firstcolor;
+// 		border-radius: 12px;
+// 		background-color: $maincolor2;
+// 		transition: background-color 0.3s;
 
-		&:hover {
-			background-color: $maincolorhover2;
-		}
-	}
-}
+// 		&:hover {
+// 			background-color: $maincolorhover2;
+// 		}
+// 	}
+// }
 
 @keyframes show-cookies {
 	to {
