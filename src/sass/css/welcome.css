@@ -1,0 +1,139 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-padding-top: 70px;
+}
+
+.container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.h1, h1 {
+  font-size: calc(4rem + 1.5vw);
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.btn-close {
+  --bs-btn-close-opacity: 1;
+  --bs-btn-close-hover-opacity: 1;
+}
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  color: #fff;
+  background-color: #b967b7;
+  border-color: #b967b7;
+}
+
+.text-small-title {
+  font-size: 2.5rem;
+}
+
+.list-group-item + .list-group-item {
+  border-top-width: 1px;
+  border-radius: 8px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.welcome-box {
+  background-color: #2c2c2c;
+  -webkit-box-shadow: 10px 10px 30px #2c2c2c;
+          box-shadow: 10px 10px 30px #2c2c2c;
+  min-height: 50vh;
+}
+.welcome-box:first-child {
+  letter-spacing: 2px;
+}
+.welcome-box .welcome-title {
+  color: #ebdc6b;
+  font-size: 8rem;
+  letter-spacing: 4px;
+}
+.welcome-box .welcome-text {
+  padding: 4rem 2rem;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+.welcome-box .btn {
+  margin-top: 2rem;
+  font-size: 2rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  background-color: #dc6beb;
+  background-color: #ebdc6b;
+  border: none;
+  border-radius: 12px;
+  -webkit-animation: scale 2s 1s infinite;
+          animation: scale 2s 1s infinite;
+}
+.welcome-box .btn:hover {
+  background-color: #ecd83b;
+}
+
+@-webkit-keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}/*# sourceMappingURL=welcome.css.map */
